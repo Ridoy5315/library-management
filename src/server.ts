@@ -14,7 +14,7 @@ app.use(routes);
 app.get("/", (req: Request, res: Response) => {
   res.send({
     success: true,
-    message: "Welcome to library management system",
+    message: "Welcome to library management",
   });
 });
 

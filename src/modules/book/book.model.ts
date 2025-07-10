@@ -68,8 +68,12 @@ bookSchema.statics.borrowBook = async function (
   if (!book) {
     throw new Error("Book not found");
   }
+  if(quantity <= 0){
+    throw new Error("Please write the proper quantity");
+  }
+  
   if (book.copies < quantity) {
-    throw new Error("Not  enough copies available");
+    throw new Error("Not enough copies available");
   }
 
   book.copies = book.copies - quantity;
