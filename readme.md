@@ -70,7 +70,7 @@ npm run dev
 |    GET    |    /api/books    |
 |    GET    | /api/books?filter=FANTASY&sortBy=createdAt&sort=desc&limit=5 |
 |    GET    |  /api/books/:id  |
-|   PATCH   |  /api/books/:id  |
+|   PUT   |  /api/books/:id  |
 |   DELETE  |  /api/books/:id  |
 
 ### Borrow Routes 
